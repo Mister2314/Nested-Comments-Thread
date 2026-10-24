@@ -1,11 +1,17 @@
-# Nested-Comments-Thread
+﻿# Nested-Comments-Thread
 
 A recursive comment system — replies nest to any depth, with add, edit, reply, delete and likes, persisted to `localStorage`.
 
 **Live demo:** <https://nested-comment-systemm.netlify.app/>
 
 <p align="center">
-  <img src="docs/preview.png" alt="Nested Comments Thread preview" width="360">
+<div align="center">
+
+| Desktop | Mobile |
+|---|---|
+| <img src="docs/shot-desktop.png" alt="Desktop view" width="700"> | <img src="docs/shot-mobile.png" alt="Mobile view" width="290"> |
+
+</div>
 </p>
 
 ## What it does
