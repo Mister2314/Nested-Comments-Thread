@@ -40,7 +40,7 @@
   height: 32px;
   flex: 0 0 32px;
   border-radius: 50%;
-  background: #eef2ff;
+  background: var(--avatar-bg);
   color: var(--accent);
   display: grid;
   place-items: center;
@@ -127,8 +127,8 @@
   cursor: pointer;
 }
 
-.actionBtn:hover { color: var(--accent); background: #eff6ff; }
-.actionBtnDanger:hover { color: var(--danger); background: #fef2f2; }
+.actionBtn:hover { color: var(--accent); background: var(--accent-soft); }
+.actionBtnDanger:hover { color: var(--danger); background: var(--danger-soft); }
 
 .editContainer { margin-top: 8px; }
 

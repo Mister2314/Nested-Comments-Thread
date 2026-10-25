@@ -1,0 +1,23 @@
+.toggle {
+  display: inline-grid;
+  place-items: center;
+  width: 36px;
+  height: 36px;
+  background: none;
+  border: 1px solid var(--hairline);
+  border-radius: 50%;
+  color: var(--muted);
+  cursor: pointer;
+  transition: color 0.15s ease, border-color 0.15s ease;
+}
+
+.toggle:hover {
+  color: var(--ink);
+  border-color: var(--muted);
+}
+
+.icon { display: block; }
+
+@media (max-width: 639px) {
+  .toggle { width: 44px; height: 44px; }
+}

@@ -28,6 +28,7 @@ React 19 · TypeScript (strict) · Vite 6 · Motion 14 (`motion/react`) · CSS M
 - ARIA tree semantics (`tree`/`treeitem`/`aria-level`/`aria-expanded`), labelled controls, roving tab index and visible focus rings
 - Enter/exit micro-interactions on replies, like/dislike pop feedback, inline edit with an `edited` badge
 - Mobile-first: indentation folds to a rail-only composition on small screens, 44px touch targets, safe-area insets
+- Dark/light theme: follows the system by default, persists an explicit choice in `localStorage`, applies before first paint (no flash) and is designed rather than inverted (`color-scheme` aware)
 - `prefers-reduced-motion` honored everywhere — the unanimated page is the complete page
 
 ## Run locally

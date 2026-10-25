@@ -1,4 +1,5 @@
 :root {
+  color-scheme: light;
   --bg: #faf9f7;
   --surface: #fff;
   --ink: #1a1a1a;
@@ -6,13 +7,36 @@
   --hairline: #e5e2dd;
   --accent: #2563eb;
   --accent-hover: #1d4ed8;
+  --accent-soft: #eff6ff;
   --danger: #dc2626;
   --danger-hover: #b91c1c;
+  --danger-soft: #fef2f2;
+  --avatar-bg: #eef2ff;
   --focus-ring: 0 0 0 2px var(--accent);
   --shadow-sm: 0 1px 2px rgba(0,0,0,.04), 0 1px 3px rgba(0,0,0,.06);
   --shadow-md: 0 4px 6px -1px rgba(0,0,0,.07), 0 2px 4px -2px rgba(0,0,0,.04);
   --radius: 8px;
   --indent-step: 24px;
+}
+
+/* Dark is designed, not inverted: warmer neutral, lifted surfaces, softened accent */
+[data-theme='dark'] {
+  color-scheme: dark;
+  --bg: #17181c;
+  --surface: #1f2126;
+  --ink: #e8e6e1;
+  --muted: #9b99a0;
+  --hairline: #2e3138;
+  --accent: #8ab2ff;
+  --accent-hover: #a6c4ff;
+  --accent-soft: #242a36;
+  --danger: #f87171;
+  --danger-hover: #fca5a5;
+  --danger-soft: #2d2124;
+  --avatar-bg: #262b36;
+  --focus-ring: 0 0 0 2px var(--accent);
+  --shadow-sm: 0 1px 2px rgba(0,0,0,.3), 0 1px 3px rgba(0,0,0,.35);
+  --shadow-md: 0 4px 6px -1px rgba(0,0,0,.4), 0 2px 4px -2px rgba(0,0,0,.3);
 }
 
 @media (prefers-reduced-motion: reduce) {

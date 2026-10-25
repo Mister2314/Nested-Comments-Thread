@@ -9,11 +9,19 @@
   margin: 0 auto;
 }
 
+.pageHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
 .pageTitle {
   font-size: 22px;
   font-weight: 700;
   letter-spacing: -0.02em;
-  margin: 0 0 16px;
+  margin: 0;
 }
 
 .threadList {

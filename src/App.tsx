@@ -1,14 +1,17 @@
-﻿import { useCallback, useEffect, useRef, useState } from 'react'
+import { useCallback, useEffect, useRef, useState } from 'react'
 import { AnimatePresence, motion } from 'motion/react'
 import { flattenTree } from './utils/tree'
 import type { ThreadItem as ThreadItemType } from './types'
 import { useThread } from './hooks/useThread'
+import { useTheme } from './hooks/useTheme'
+import ThemeToggle from './components/ThemeToggle'
 import ThreadItem from './components/Comment/ThreadItem'
 import ReplyForm from './components/Comment/ReplyForm'
 import styles from './App.module.css'
 
 function App() {
   const { threadItems, ...controller } = useThread()
+  const { theme, toggleTheme } = useTheme()
   const [selectedId, setSelectedId] = useState<number | null>(threadItems[0]?.id ?? null)
   const [replyingId, setReplyingId] = useState<number | null>(null)
   const [editingId, setEditingId] = useState<number | null>(null)
@@ -101,7 +104,10 @@ function App() {
   return (
     <div className={styles.pageWrapper} role="tree" aria-label="Discussion thread">
       <div className={styles.mainContainer}>
-        <h1 className={styles.pageTitle}>Discussion Thread</h1>
+        <header className={styles.pageHeader}>
+          <h1 className={styles.pageTitle}>Discussion Thread</h1>
+          <ThemeToggle theme={theme} onToggle={toggleTheme} />
+        </header>
 
         <ReplyForm
           onSubmit={(content) => {
